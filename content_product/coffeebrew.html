@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../home.css">
+
+    <link rel="stylesheet" href="../content_product/otherproduct.css">
+    <title>Buy Coffee Brew </title>
+</head>
+
+<body>
+    <!--LOADING-->
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <p>Loading...</p>
+    </div>
+    <!-- CHAT BUTTON-->
+    <a href="../contact.html">
+        <div id="chatButton" class="chat-button blink">
+            <i id="chaticon" class="fa-regular fa-comment fa-2xl"></i>
+        </div>
+        <p class="text_chat">CONTACT FOR ORDER!!!</p>
+    </a>
+    <!--KHU VỰC HEADER-->
+    <header>
+        <div class="headerContainer">
+            <div class="leftheader">
+                <a href="../home.html"><img src="../logo/logo.png"></a>
+            </div>
+            <div class="midheader">
+                <li onclick="blocksubmenu(this)">GREEN COFFEE BEANS<i class="fa-solid fa-chevron-down"></i>
+                    <ul class="submenu">
+                        <li><a href="../content_product/robusta.html">PREMIUM ROBUSTA</a></li>
+                        <li><a href="../content_product/arabica.html">PREMIUM ARABICA</a></li>
+                    </ul>
+                </li>
+
+                <li onclick="blocksubmenu(this)">OTHER PRODUCT<i class=" fa-solid fa-chevron-down"></i>
+                    <ul class="submenu">
+                        <li><a href="../content_product/coffeepacking.html">COFFEE PACKAGING</a></li>
+                        <li><a href="../content_product/coffeebrew.html">COFFEE BREW KIT</a></li>
+                    </ul>
+                </li>
+                <li onclick="blocksubmenu(this)"><a href="../content_other/aboutus.html">ABOUT US</a></li>
+                <li onclick="blocksubmenu(this)"><a href="../contact.html">ORDER</a></li>
+            </div>
+            <div class="rightheader">
+                <div class="searchbox">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input id="search" type="text" placeholder="Search...">
+                </div>
+                <a href="../contact.html" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-solid fa-cart-shopping fa-lg"></i></a>
+
+            </div>
+        </div>
+    </header>
+    <!--KHU VỰC SẢN PHẨM-->
+    <section class="product">
+        <div class="product_container">
+            <div class="product_content">
+                <div class="product_content_left">
+                    <div class="product_content_left_big_img">
+                        <img src="../content_product/file_img/brewkit1.png" alt="Coffee Brew Kit">
+                    </div>
+
+                </div>
+                <div class="product_content_right">
+                    <div class="product_content_right_name">
+                        <h1>COFFEE BREW KIT</h1>
+                    </div>
+                    <div class="product_content_right_price">
+                        <p>$Price$: Contact us for orders</p>
+                    </div>
+                    <div class="product_content_score">
+                        <p>Price: 100%<span class="dot"></span></p>
+                        <p>Convenience: 100%<span class="dot"></span></p>
+
+                    </div>
+                    <p style="color: #bc544b;font-style:italic;"><i class="fa-solid fa-gift" style="color: #bc544b;"
+                            s></i>Suitable as a gift for customers.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--KHU VỰC CUỐI TRANG-->
+    <section class="footer_page">
+        <div class="footer_container">
+            <div class="footer_page_col">
+                <p>WTO COFFEE - A place specializing in exporting high-quality green coffee beans from Vietnam.</p>
+                <ul>
+                    <li>CONTACT US:</li>
+                    <li><a href="" target="_blank" rel="noopener noreferrer"><img src="../logo/logo_fb.png"></a></li>
+                    <li><a href="" target="_blank" rel="noopener noreferrer"><img src="../logo/logo_ins.png"></a></li>
+                    <li><a href="" target="_blank" rel="noopener noreferrer"><img src="../logo/logo_tele.png"></a></li>
+                </ul>
+            </div>
+            <div class="footer_page_col">
+
+                <li><a href="">Search</a></li>
+                <li><a href="">Delivery and Warranty Policy</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Feedback</a></li>
+            </div>
+            <div class="footer_page_col">
+                <p>SIGN UP TO RECEIVE DIRECT CONSULTATION FROM US</p>
+                <input type="text" placeholder="Enter your email, phone or other...">
+                <button id="sendButton">SEND</button>
+                <span id="messagefalse"
+                    style="display: none; font-size: 13px; color: #bc544b; font-weight: bold; margin-top: 10px;">X
+                    Please enter your email, phone, or other contact information.</span>
+                <span id="messagetrue"
+                    style="display: none; font-size: 13px; color: green; font-weight: bold; margin-top: 10px;">Thank
+                    you
+                    for signing up!!! We will contact you as soon as possible.</span>
+            </div>
+        </div>
+    </section>
+    <script src="../home.js"></script>
+    <script src="../menu_footer.js"></script>
+</body>
+
+</html>

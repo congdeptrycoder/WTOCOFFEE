@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <title>WTO Coffee - Premium VietNam Coffee</title>
+</head>
+
+<body>
+    <!--LOANDING-->
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <p>Loading...</p>
+    </div>
+    <!-- CHAT BUTTON-->
+    <a href="contact.html">
+        <div id="chatButton" class="chat-button blink">
+            <i id="chaticon" class="fa-regular fa-comment fa-2xl"></i>
+        </div>
+        <p class="text_chat">CONTACT FOR ORDER!!!</p>
+    </a>
+    <!--KHU VỰC HEADER-->
+    <header>
+        <div class="headerContainer">
+            <div class="leftheader">
+                <a href="home.html"><img src="logo/logo.png"></a>
+            </div>
+            <div class="midheader">
+                <li onclick="blocksubmenu(this)">GREEN COFFEE BEANS<i class="fa-solid fa-chevron-down"></i>
+                    <ul class="submenu">
+                        <li><a href="content_product/robusta.html">PREMIUM ROBUSTA</a></li>
+                        <li><a href="content_product/arabica.html">PREMIUM ARABICA</a></li>
+                    </ul>
+                </li>
+
+                <li onclick="blocksubmenu(this)">OTHER PRODUCT<i class=" fa-solid fa-chevron-down"></i>
+                    <ul class="submenu">
+                        <li><a href="content_product/coffeepacking.html">COFFEE PACKAGING</a></li>
+                        <li><a href="content_product/coffeebrew.html">COFFEE BREW KIT</a></li>
+                    </ul>
+                </li>
+                <li onclick="blocksubmenu(this)"><a href="content_other/aboutus.html">ABOUT US</a></li>
+                <li onclick="blocksubmenu(this)"><a href="contact.html">ORDER</a></li>
+            </div>
+            <div class="rightheader">
+                <div class="searchbox">
+                    <i id="search" class="fa-solid fa-magnifying-glass"></i>
+                    <input id="searchenter" type="text" placeholder="Search...">
+                </div>
+
+                <a href="contact.html" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-solid fa-cart-shopping fa-lg"></i></a>
+
+            </div>
+        </div>
+    </header>
+    <!--KHU VỰC BANNER QUẢNG BÁ-->
+    <section class="banner">
+        <div class="banner_container">
+            <div class="banner_bar">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <div class="banner_image">
+                <img class="active" src="banner/1.png">
+                <img src="banner/2.png">
+                <img src="banner/3.png">
+                <img src="banner/4.png">
+            </div>
+
+        </div>
+    </section>
+    <!--KHU VỰC GIỚI THIỆU SẢN PHẨM-->
+    <section class="status">
+        <div class="main_container">
+            <div class="status_left_1">
+                <img src="status/1.jpg">
+                <h2>Reputation</h2>
+                <p>Project with the advice of the Former Deputy Minister of Industry and Trade of Vietnam, the Former
+                    Chairman of the Vietnam Coffee – Cocoa Association. Head of the
+                    Delegation negotiating the World Trade Organization (WTO) Agreement!
+                    - LUONG VAN TU</p>
+                <img src="logo/logo.png">
+            </div>
+            <div class="status_right_1">
+                <h2>What are GREEN COFFEE BEANS?</h2>
+                <p>Green coffee beans are the raw, unroasted seeds of the coffee plant (Coffea species). They are the
+                    natural state of coffee beans before they undergo the roasting process, which transforms them into
+                    the aromatic, brown beans used to brew coffee</p>
+                <a href="content_other/greenbeans.html">Read more</a>
+                <img src="status/wto.jpg">
+                <h2>WTO COFFEE's products ensure the highest quality of green coffee beans.</h2>
+                <p>We will deliver sacks of coffee beans to you, shipping worldwide—just place your order!</p>
+                <a href="content_other/aboutus.html">About us</a>
+            </div>
+
+        </div>
+    </section>
+    <!--KHU VỰC CUỐI TRANG-->
+    <section class="footer_page">
+        <div class="footer_container">
+            <div class="footer_page_col">
+                <p>WTO COFFEE - A place specializing in exporting high-quality green coffee beans from Vietnam.</p>
+                <ul>
+                    <li>CONTACT US:</li>
+                    <li><a href="" target="_blank" rel="noopener noreferrer"><img src="logo/logo_fb.png"></a></li>
+                    <li><a href="" target="_blank" rel="noopener noreferrer"><img src="logo/logo_ins.png"></a></li>
+                    <li><a href="" target="_blank" rel="noopener noreferrer"><img src="logo/logo_tele.png"></a></li>
+                </ul>
+            </div>
+            <div class="footer_page_col">
+
+                <li><a href="">Search</a></li>
+                <li><a href="">Delivery and Warranty Policy</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Feedback</a></li>
+            </div>
+            <div class="footer_page_col">
+                <p>SIGN UP TO RECEIVE DIRECT CONSULTATION FROM US</p>
+                <input type="text" placeholder="Enter your email, phone or other...">
+                <button id="sendButton">SEND</button>
+                <span id="messagefalse"
+                    style="display: none; font-size: 13px; color: #bc544b; font-weight: bold; margin-top: 10px;">X
+                    Please enter your email, phone, or other contact information.</span>
+                <span id="messagetrue"
+                    style="display: none; font-size: 13px; color: green; font-weight: bold; margin-top: 10px;">Thank
+                    you
+                    for signing up!!! We will contact you as soon as possible.</span>
+            </div>
+        </div>
+    </section>
+    <script src="home.js"></script>
+    <script src="menu_footer.js"></script>
+</body>
+
+</html>
