@@ -36,13 +36,15 @@ window.addEventListener('load', function () {
 const file_list = [
     "index.html",
     "contact.html",
-    "content_product/arabica.html",
-    "content_product/robusta.html",
-    "content_product/coffeebrew.html",
-    "content_product/coffeepacking.html",
-    "content_other/aboutus.html",
-    "content_other/greenbeans.html"
+    "arabica.html",
+    "robusta.html",
+    "coffeebrew.html",
+    "coffeepacking.html",
+    "aboutus.html",
+    "greenbeans.html",
+    "luongvantu.html"
 ]
+
 function searchContent() {
     const keyword = getKeyword();
     if (!keyword) {
@@ -82,6 +84,8 @@ document.getElementById('searchenter').addEventListener('keypress', function (e)
         searchContent();
     }
 });
+
+
 /*scroll search header*/
 document.getElementById("search_footer").addEventListener("click", function (event) {
     event.preventDefault(); // Ngăn chặn hành vi mặc định của thẻ <a>

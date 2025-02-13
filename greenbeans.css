@@ -174,3 +174,35 @@
     background-color: #D8E4BC;
     font-size: 14px;
 }
+
+@media screen and (max-width: 859px) {
+    .top_page_container p {
+        width: 90%;
+    }
+
+    .status_info_left {
+        width: 100%;
+    }
+
+    .status_info_right {
+        width: 100%;
+    }
+
+    .status_info_left p {
+        font-size: 12px;
+        padding: 5px 0px;
+    }
+
+    .status_info_left h2 {
+        font-size: 15px;
+    }
+
+    .status_info_right p {
+        font-size: 12px;
+        padding: 5px 0px;
+    }
+
+    .status_info_right h2 {
+        font-size: 15px;
+    }
+}
