@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: "Lexend Tera", serif;
+    font-family: "Maven Pro", serif;
     background: #FEFAF6;
 }
 
@@ -40,7 +40,7 @@ header {
     width: 90%;
     margin: auto;
     display: flex;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .banner_container {
@@ -201,6 +201,10 @@ header {
 
 .submenu>li>a:hover {
     color: #DAC0A3;
+}
+
+.midheader>li.active {
+    font-weight: bold;
 }
 
 .submenu.active {
@@ -379,7 +383,7 @@ i.rotate {
 
 .status_info_left2 p {
 
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .status_info_right2 {
@@ -404,7 +408,7 @@ i.rotate {
 }
 
 .status_info_right2 p {
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .footer_container {
@@ -424,7 +428,7 @@ i.rotate {
     color: #102C57;
     font-weight: bold;
     background: #DAC0A3;
-    font-size: 14px;
+    font-size: 16px;
     display: inline-block;
     margin-top: 15%;
 }
@@ -432,7 +436,7 @@ i.rotate {
 .footer_page_col ul {
     display: flex;
     font-style: italic;
-    font-size: 12px;
+    font-size: 14px;
     color: #102C57;
     background: #DAC0A3;
     margin-left: 10%;
@@ -485,7 +489,7 @@ i.rotate {
     width: 100%;
     border-radius: 10px;
     border-color: transparent;
-    font-size: 10px;
+    font-size: 12px;
     height: 30px;
     width: 70%;
     padding-left: 3%;
@@ -500,6 +504,7 @@ i.rotate {
 }
 
 .footer_page_col button {
+    font-size: 13px;
     position: relative;
     border-color: transparent;
     border-radius: 5px;
@@ -517,6 +522,7 @@ i.rotate {
 /* Màn hình loading */
 #loading-screen {
     position: fixed;
+    font-size: 16px;
     top: 0;
     left: 0;
     width: 100%;

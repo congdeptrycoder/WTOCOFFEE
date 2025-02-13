@@ -3,6 +3,7 @@ function blocksubmenu(element) {
     var submenu = element.querySelector(".submenu");
     var icon = element.querySelector("i");
 
+
     // Kiểm tra nếu submenu và icon tồn tại
     if (submenu && icon) {
         // Ẩn tất cả các submenu khác (trừ submenu hiện tại)
@@ -19,13 +20,20 @@ function blocksubmenu(element) {
             }
         });
 
+
         // Toggle class 'active' cho submenu và 'rotate' cho icon
         submenu.classList.toggle("active");
+
         icon.classList.toggle("rotate");
+
     } else {
         // Ẩn tất cả các submenu và reset icon
         document.querySelectorAll(".submenu").forEach(sub => sub.classList.remove("active"));
         document.querySelectorAll("i").forEach(icon => icon.classList.remove("rotate"));
+        // Reset font-weight của tất cả các li về normal
+
+
+
 
     }
 }

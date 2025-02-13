@@ -33,6 +33,7 @@
 
 .top_page_container p {
     width: 50%;
+    font-size: 17px;
     align-items: center;
     margin-bottom: 10px;
 }
@@ -134,7 +135,7 @@
 
 .status_info_left p {
     background-color: #AF8F6F;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .status_info_left p a {
@@ -172,7 +173,7 @@
 
 .status_info_right p {
     background-color: #AF8F6F;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 @media screen and (max-width: 859px) {
@@ -189,20 +190,20 @@
     }
 
     .status_info_left p {
-        font-size: 12px;
+        font-size: 14px;
         padding: 5px 0px;
     }
 
     .status_info_left h2 {
-        font-size: 15px;
+        font-size: 22px;
     }
 
     .status_info_right p {
-        font-size: 12px;
+        font-size: 14px;
         padding: 5px 0px;
     }
 
     .status_info_right h2 {
-        font-size: 15px;
+        font-size: 18px;
     }
 }

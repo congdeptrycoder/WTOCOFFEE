@@ -97,7 +97,7 @@
 }
 
 .content_col_text p {
-    font-size: 13px;
+    font-size: 16px;
     padding: 10px;
     overflow-wrap: break-word;
 }
@@ -134,7 +134,7 @@
 
 .status_info_left p {
     background-color: #DAC0A3;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .status_info_right {
@@ -165,12 +165,12 @@
 
 .status_info_right p {
     background-color: #DAC0A3;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 @media screen and (max-width: 859px) {
     .top_page_container h2 {
-        font-size: 20px;
+        font-size: 22px;
         width: 90%;
     }
 
@@ -198,14 +198,18 @@
         width: 100%;
     }
 
+    .status_info_left h2 {
+        font-size: 18px;
+    }
+
     .status_info_left p {
         margin: 5px 0px;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .status_info_right p {
         margin: 5px 0px;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .status_info_right {
