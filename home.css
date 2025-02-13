@@ -31,7 +31,7 @@ header {
     align-items: center;
     /* Căn giữa theo chiều dọc */
     width: 100%;
-    height: 48px;
+    height: 50px;
     position: relative;
     border-bottom: 2px solid #102C57;
 }
@@ -111,17 +111,14 @@ header {
     width: 20%;
     display: flex;
     float: left;
+    align-items: center;
     color: #102C57;
 }
 
-.leftheader p {
-    display: flex;
-    align-items: center;
 
-}
 
 .leftheader img {
-    height: 30px;
+    height: 40px;
     width: auto;
     object-fit: contain;
     padding-right: 10px;
@@ -396,14 +393,14 @@ i.rotate {
 .status_info_right2 img {
     border-radius: 5px;
     width: 90%;
-    aspect-ratio: 1 / 0.5;
+    height: auto;
     object-fit: fill;
 }
 
 .status_info_left2 img {
     border-radius: 5px;
     width: 90%;
-    aspect-ratio: 1 / 0.5;
+    height: auto;
     object-fit: fill;
 }
 
@@ -690,14 +687,14 @@ i.rotate {
     .status_info_right2 img {
         border-radius: 5px;
         width: 90%;
-        aspect-ratio: 1 / 0.5;
+        height: auto;
         object-fit: fill;
     }
 
     .status_info_left2 img {
         border-radius: 5px;
         width: 90%;
-        aspect-ratio: 1 / 0.5;
+        height: auto;
         object-fit: fill;
     }
 

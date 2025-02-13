@@ -1,6 +1,6 @@
 .first_img {
     width: 200px;
-    height: 200px;
+    height: auto;
     display: block;
     margin-bottom: 50px;
     object-fit: cover;
