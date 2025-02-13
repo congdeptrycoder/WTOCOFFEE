@@ -45,6 +45,7 @@
     max-width: 100%;
     justify-content: space-between;
     gap: 5px;
+    flex-wrap: wrap;
 }
 
 .content_col {
@@ -98,6 +99,7 @@
 .content_col_text p {
     font-size: 13px;
     padding: 10px;
+    overflow-wrap: break-word;
 }
 
 .status_container {
@@ -164,4 +166,49 @@
 .status_info_right p {
     background-color: #DAC0A3;
     font-size: 14px;
+}
+
+@media screen and (max-width: 859px) {
+    .top_page_container h2 {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .content_item {
+        gap: 10px;
+        /* Tăng khoảng cách giữa các cột trên mobile */
+    }
+
+    .content_col {
+        width: calc(50% - 5px);
+        /* Đổi width thành 50% để hiển thị 2 cột */
+        aspect-ratio: 1 / 1.5;
+        /* Điều chỉnh tỷ lệ khung hình cho phù hợp với mobile */
+    }
+
+    .content_col_img_d {
+        position: relative;
+    }
+
+    .content_col_next img {
+        display: none;
+    }
+
+    .status_info_left {
+        width: 100%;
+    }
+
+    .status_info_left p {
+        margin: 5px 0px;
+        font-size: 12px;
+    }
+
+    .status_info_right p {
+        margin: 5px 0px;
+        font-size: 12px;
+    }
+
+    .status_info_right {
+        width: 100%;
+    }
 }

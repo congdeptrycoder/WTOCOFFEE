@@ -162,3 +162,13 @@
     background-color: #D8E4BC;
 
 }
+
+@media screen and (max-width: 859px) {
+    .product_content_right_name h1 {
+        font-size: 19px;
+    }
+
+    .product_content_right_price p {
+        font-size: 15px;
+    }
+}

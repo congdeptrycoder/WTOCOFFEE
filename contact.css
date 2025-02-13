@@ -100,3 +100,46 @@ h1 {
         width: 100%
     }
 }
+
+@media screen and (max-width: 859px) {
+    .contact_container {
+        width: 90%;
+        position: relative;
+        /* Chiếm 90% màn hình thay vì 50% */
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .contact_box {
+        box-sizing: border-box;
+        margin: 30px auto;
+        padding: 15px;
+
+    }
+
+    .form_group label {
+        font-size: 14px;
+        /* Giảm kích thước chữ để vừa màn hình */
+    }
+
+    .form_group input,
+    .form_group textarea,
+    .form_group select {
+        font-size: 14px;
+        height: 35px;
+        /* Giảm chiều cao input */
+    }
+
+    .contact_box button {
+        width: 100%;
+        /* Nút bấm full width để dễ thao tác */
+        height: 45px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 20px;
+        /* Giảm kích thước tiêu đề */
+        text-align: center;
+    }
+}

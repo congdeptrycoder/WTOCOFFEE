@@ -1,7 +1,7 @@
 let currentIndex = 0;
 const images = document.querySelectorAll('.banner_image img');
 const dots = document.querySelectorAll('.banner_bar .dot');
-
+/*show ảnh*/
 function showImage(index) {
     images.forEach((img, i) => {
         img.classList.remove('active');
@@ -25,6 +25,7 @@ function nextImage() {
 }
 
 setInterval(nextImage, 5000); // Tự động chuyển ảnh sau mỗi 5 giây
+
 // Ẩn màn hình loading khi trang tải xong
 window.addEventListener('load', function () {
     const loadingScreen = document.getElementById('loading-screen');
@@ -33,7 +34,7 @@ window.addEventListener('load', function () {
     }
 });
 const file_list = [
-    "home.html",
+    "index.html",
     "contact.html",
     "content_product/arabica.html",
     "content_product/robusta.html",
@@ -79,5 +80,17 @@ document.getElementById('searchenter').addEventListener('keypress', function (e)
     if (e.key === 'Enter') {
         e.preventDefault();
         searchContent();
+    }
+});
+/*scroll search header*/
+document.getElementById("search_footer").addEventListener("click", function (event) {
+    event.preventDefault(); // Ngăn chặn hành vi mặc định của thẻ <a>
+
+    // Lấy phần tử ô tìm kiếm
+    let searchBox = document.getElementById("searchenter");
+
+    if (searchBox) {
+        searchBox.scrollIntoView({ behavior: "smooth", block: "center" }); // Cuộn mượt đến ô tìm kiếm
+        searchBox.focus(); // Tự động focus vào ô tìm kiếm
     }
 });

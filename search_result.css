@@ -1,0 +1,17 @@
+.content_container {
+    width: 90%;
+    margin: 50px auto;
+    min-height: 500px;
+}
+
+.content_container h1 {
+    text-align: left;
+    font-size: 40px;
+    color: #6b3e2e;
+}
+
+.content_container a {
+    color: #102C57;
+    margin: 20px 10px;
+    text-decoration: none;
+}

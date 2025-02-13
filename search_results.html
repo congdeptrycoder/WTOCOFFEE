@@ -6,6 +6,7 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="search_result.css">
     <title>WTO Coffee - Premium VietNam Coffee</title>
 </head>
 
@@ -62,6 +63,7 @@
     <section class="content">
         <div class="content_container">
             <h1 id="keyword"></h1>
+
             <ul id="results"></ul>
         </div>
     </section>
@@ -73,13 +75,13 @@
                 <ul>
                     <li>CONTACT US:</li>
                     <li><a href="" target="_blank" rel="noopener noreferrer"><img src="logo/logo_fb.png"></a></li>
-                    <li><a href="" target="_blank" rel="noopener noreferrer"><img src="logo/logo_ins.png"></a></li>
+                    <li><a href="" target="_blank" rel="noopener noreferrer"><img src="logo/logo_whatsapp.png"></a></li>
                     <li><a href="" target="_blank" rel="noopener noreferrer"><img src="logo/logo_tele.png"></a></li>
                 </ul>
             </div>
             <div class="footer_page_col">
 
-                <li><a href="">Search</a></li>
+                <li id="search_footer"><a href="">Search</a></li>
                 <li><a href="">Delivery and Warranty Policy</a></li>
                 <li><a href="">Privacy Policy</a></li>
                 <li><a href="">Feedback</a></li>
@@ -105,11 +107,11 @@
             const keyword = localStorage.getItem("searchKeyword") || "";
             const results = JSON.parse(localStorage.getItem("searchResults")) || [];
 
-            document.getElementById("keyword").innerText = `Những trang sau có từ khoá "${keyword}"`;
+            document.getElementById("keyword").innerText = `Sites have keyword: "${keyword}"`;
 
             const resultList = document.getElementById("results");
             if (results.length === 0) {
-                resultList.innerHTML = "<p> Không tìm thấy kết quả.</p>";
+                resultList.innerHTML = "<p> Nothing Found.</p>";
             } else {
                 results.forEach(result => {
                     const li = document.createElement("li");
