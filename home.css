@@ -561,6 +561,18 @@ i.rotate {
     color: #333;
 }
 
+/* Thêm vào file home.css hoặc trong thẻ <style> trong <head> */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 @media screen and (max-width: 859px) {
     h1 {
         font-size: 23px;

@@ -98,3 +98,21 @@ document.getElementById("search_footer").addEventListener("click", function (eve
         searchBox.focus(); // Tự động focus vào ô tìm kiếm
     }
 });
+//hiệu ứng scroll
+document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll('.fade-in-up');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.1 // Kích hoạt khi 10% của phần tử xuất hiện trong viewport
+    });
+
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+});
