@@ -19,4 +19,19 @@ document.getElementById('social-platform').addEventListener('change', function (
     }
 
     socialInputGroup.innerHTML = `<label for="social-input">Account:</label>${inputHTML}`;
+
+    // Thêm sự kiện xóa highlight cho trường social-input
+    const socialInput = document.getElementById('social-input');
+    if (socialInput) {
+        socialInput.addEventListener('input', function () {
+            this.classList.remove('invalid');
+        });
+    }
+});
+
+// Thêm sự kiện xóa highlight cho tất cả các trường
+document.querySelectorAll('#contact_form input, #contact_form select, #contact_form textarea').forEach(element => {
+    element.addEventListener('input', function () {
+        this.classList.remove('invalid');
+    });
 });

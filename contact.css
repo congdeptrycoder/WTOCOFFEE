@@ -65,6 +65,12 @@
     resize: vertical;
 }
 
+/* Highlight các trường bị lỗi */
+.invalid {
+    border: 2px solid #ff0000 !important;
+    background-color: #ffe6e6 !important;
+}
+
 .contact_box button {
     width: 30%;
     margin-top: 20px;
