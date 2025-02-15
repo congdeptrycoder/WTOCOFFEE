@@ -1,7 +1,7 @@
 let currentIndex = 0;
 const images = document.querySelectorAll('.banner_image img');
 const dots = document.querySelectorAll('.banner_bar .dot');
-/*show ảnh*/
+/*show ảnh trang home*/
 function showImage(index) {
     images.forEach((img, i) => {
         img.classList.remove('active');
@@ -33,6 +33,7 @@ window.addEventListener('load', function () {
         loadingScreen.style.display = 'none';
     }
 });
+// Search từ khoá
 const file_list = [
     "index.html",
     "contact.html",
@@ -114,5 +115,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     elements.forEach(element => {
         observer.observe(element);
+    });
+});
+// copy gmail footer
+document.addEventListener("DOMContentLoaded", function () {
+    const gmailLink = document.getElementById('gmailLink');
+
+    gmailLink.addEventListener('click', function (event) {
+        event.preventDefault(); // Ngăn chặn hành động mặc định của thẻ <a>
+
+        const email = 'centurygreenvietlimited@gmail.com'; // Thay thế bằng địa chỉ Gmail của bạn
+
+        // Sao chép địa chỉ Gmail vào clipboard
+        navigator.clipboard.writeText(email).then(function () {
+            // Hiển thị thông báo
+            alert('Account Copied');
+        }).catch(function (err) {
+            console.error('Failed to copy email: ', err);
+        });
     });
 });
