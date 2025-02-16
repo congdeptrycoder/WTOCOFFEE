@@ -67,7 +67,7 @@
 
 /* Highlight các trường bị lỗi */
 .invalid {
-    border: 2px solid #ff0000 !important;
+    border: 2px solid #CA3433 !important;
     background-color: #ffe6e6 !important;
 }
 
